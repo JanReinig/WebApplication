@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Address Book</h1>
+            <p>Your personal address book in the cloud</p>
+        </div>
+        <p></p>
+        <div class="well">
+            <form>
+                <div class="form-group">
+                    <label for="salutation">Salutation</label>
+                    <select class="form-control" name="Salutation" size="1" id="salutation">
+                        <option>Mr.</option>
+                        <option>Mrs.</option>
+                    </select>
+                </div>
+
+
+                <p></p>
+                <div class="form-group">
+                    <label for="firstName">First name</label><input type="text" id="firstName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last name</label><input type="text" id="lastName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="birth">Date of birth</label><input type="date" id="dateOfBirth" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <select class="form-control" name="city" size="1" id="city">
+                        <option>Heidelberg</option>
+                        <option>Walldorf</option>
+                        <option>Wiesloch</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                        <button class="btn btn-default" role="button" id="button">
+                            <span class="glyphicon glyphicon-user">
+                            </span> Create new person
+                        </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="well">
+            <p><a href="#" id="updateCount">Number of entries in address book <span class="badge" id="personCount">undefined</span></a></p>
+
+            <div class="list-group" id="personList">
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Jan Reinig</h4>
+                    <p class="list-group-item-text"></p>
+                </a>
+                <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">Jan Fedder</h4>
+                    <p class="list-group-item-text">Mr.</p>
+                </a>
+            </div>
+
+            <p><a class="btn btn-default" href="#" role="button" id="buttonDelete"><span class="glyphicon glyphicon-trash"></span> Delete all persons</a></p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+
+<!--
+<div class="form-group">
+    <label>
+        Title:
+        <select name="city" size="2" class="form-control">
+            <option>Mr.</option>
+            <option>Mrs.</option>
+        </select>
+    </label>
+</div>
+
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" multipe id="salutation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Salutation
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">Mr.</a></li>
+        <li><a href="#">Mrs.</a></li>
+    </ul>
+</div>
+
+<div class="dropdown-salutation">
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle btn-block" type="button" multipe id="salutation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Salutation
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#" id="salutationMr">Mr.</a></li>
+            <li><a href="#" id="salutationMrs">Mrs.</a></li>
+        </ul>
+    </div>
+</div>
+-->
